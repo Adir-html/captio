@@ -1,6 +1,7 @@
-# Secrets
+# Secrets — never commit these
 .env
 backend/.env
+api/.env
 
 # Virtual environments
 .venv/
@@ -8,8 +9,12 @@ backend/.venv/
 
 # Python cache
 __pycache__/
-backend/__pycache__/
+**/__pycache__/
 *.pyc
+*.pyo
+
+# Vercel
+.vercel/
 
 # OS/editor junk
 .DS_Store

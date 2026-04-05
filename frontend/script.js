@@ -1,4 +1,7 @@
-const API_BASE = "http://127.0.0.1:8000";
+// Empty string = relative URL, works on Vercel (same origin) and with `vercel dev`.
+// For local dev without Vercel CLI, change to "http://127.0.0.1:8000" and run
+// uvicorn api.index:app --reload from the project root.
+const API_BASE = "";
 
 // ── Element refs ──────────────────────────────────────────────────────────
 const imageInput        = document.getElementById("imageInput");
@@ -295,7 +298,7 @@ async function generate() {
   resultGrid.classList.remove("visible");
 
   try {
-    const res = await fetch(`${API_BASE}/generate`, { method: "POST", body: formData });
+    const res = await fetch(`${API_BASE}/api/generate`, { method: "POST", body: formData });
 
     if (!res.ok) {
       const err = await res.json().catch(() => ({}));
@@ -314,7 +317,7 @@ async function generate() {
   } catch (err) {
     showError(
       err instanceof TypeError
-        ? `Cannot reach the backend. Is it running on ${API_BASE}?`
+        ? "Cannot reach the backend. Make sure it is running (see README)."
         : err.message
     );
   } finally {
