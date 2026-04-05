@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Captio — AI Copy from Any Image</title>
+  <meta name="description"
+        content="Upload any image and get a complete copy package in seconds — title, bullet points, description, and ad script. Works for product photos, screenshots, documents, posters, portraits, and more. No signup required." />
+  <meta property="og:title"       content="Captio — AI Copy from Any Image" />
+  <meta property="og:description" content="Upload any image. Get title, bullet points, description &amp; ad script — in seconds. No signup." />
+  <meta property="og:type"        content="website" />
+  <meta name="twitter:card"        content="summary" />
+  <meta name="twitter:title"       content="Captio — AI Copy from Any Image" />
+  <meta name="twitter:description" content="Upload any image. Get title, bullet points, description &amp; ad script — in seconds. No signup." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── HERO ──────────────────────────────────────────────────────────── -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="logo">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/>
+        </svg>
+        Captio
+      </div>
+
+      <h1>Turn any image into<br>compelling copy.</h1>
+
+      <p class="hero-sub">
+        Upload any image and get back a complete copy package — title, key points,
+        description, and ad script — in seconds.
+        Works for product photos, screenshots, documents, posters, portraits, and more.
+      </p>
+
+      <a href="#upload-section" class="btn btn-hero">
+        Try it free
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+      <div class="hero-tags">
+        <span>Product photos</span>
+        <span>Screenshots</span>
+        <span>Documents</span>
+        <span>Posters</span>
+        <span>Portraits</span>
+        <span>Code</span>
+        <span>+ more</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── MAIN ───────────────────────────────────────────────────────────── -->
+  <main class="main">
+
+    <!-- How it works -->
+    <div class="how-strip">
+      <div class="how-step">
+        <span class="how-num">1</span>
+        <span class="how-text">Drop your image</span>
+      </div>
+      <div class="how-arrow" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+          <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="how-step">
+        <span class="how-num">2</span>
+        <span class="how-text">Click Generate</span>
+      </div>
+      <div class="how-arrow" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+          <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="how-step">
+        <span class="how-num">3</span>
+        <span class="how-text">Copy and use</span>
+      </div>
+    </div>
+
+    <!-- Example use-case cards -->
+    <div class="examples-section">
+      <p class="examples-label">Works with any image type — click to upload</p>
+      <div class="examples-track" id="examplesTrack">
+
+        <button class="example-card" data-example="product">
+          <div class="example-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
+              <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="1.75"/>
+              <path d="M16 10a4 4 0 01-8 0" stroke="currentColor" stroke-width="1.75"/>
+            </svg>
+          </div>
+          <span class="example-title">Product photo</span>
+          <span class="example-desc">Marketing copy, benefits &amp; ad scripts</span>
+        </button>
+
+        <button class="example-card" data-example="ui">
+          <div class="example-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.75"/>
+              <path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="example-title">Screenshot / UI</span>
+          <span class="example-desc">Feature highlights, product copy &amp; release notes</span>
+        </button>
+
+        <button class="example-card" data-example="document">
+          <div class="example-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
+              <polyline points="14 2 14 8 20 8" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
+              <line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+              <line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="example-title">Document / Poster</span>
+          <span class="example-desc">Key points, summaries &amp; calls to action</span>
+        </button>
+
+        <button class="example-card" data-example="person">
+          <div class="example-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.75"/>
+            </svg>
+          </div>
+          <span class="example-title">Portrait / Person</span>
+          <span class="example-desc">Natural, accurate &amp; respectful descriptions</span>
+        </button>
+
+        <button class="example-card" data-example="service">
+          <div class="example-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="7" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.75"/>
+              <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="example-title">Service / Brand</span>
+          <span class="example-desc">Brand copy, taglines &amp; promotional text</span>
+        </button>
+
+        <button class="example-card" data-example="code">
+          <div class="example-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <polyline points="16 18 22 12 16 6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="8 6 2 12 8 18"   stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="example-title">Code screenshot</span>
+          <span class="example-desc">Plain-language summaries &amp; documentation copy</span>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- ── Upload card ────────────────────────────────────────────────────── -->
+    <section class="card" id="upload-section">
+
+      <!-- Heading + usage counter -->
+      <div class="card-heading-row">
+        <div class="card-heading">
+          <h2>Upload your image</h2>
+          <p>Drag &amp; drop, paste, or click to browse</p>
+        </div>
+        <div id="usageCounter" class="usage-counter" aria-live="polite">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Free: <span id="usageCount">0</span> / 3 today
+        </div>
+      </div>
+
+      <!-- Onboarding hint -->
+      <div class="upload-hint-box">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+          <line x1="12" y1="16" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="12" cy="8" r="1" fill="currentColor"/>
+        </svg>
+        <p>Works best with clear product photos, UI screenshots, documents with visible text, portraits, or brand designs. Supports any language.</p>
+      </div>
+
+      <!-- Drop zone -->
+      <div class="upload-zone" id="uploadArea" role="button" tabindex="0" aria-label="Upload image">
+        <input type="file" id="imageInput" accept="image/*" hidden />
+
+        <div id="uploadPlaceholder" class="upload-placeholder">
+          <div class="upload-icon-circle">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="17 8 12 3 7 8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="12" y1="3" x2="12" y2="15" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p class="upload-cta">Drop image here or <span class="upload-link">browse files</span></p>
+          <p class="upload-hint">JPG, PNG, WebP, GIF · Max 20 MB · or paste from clipboard</p>
+        </div>
+
+        <div id="uploadPreview" class="upload-preview" hidden>
+          <img id="imagePreview" alt="Selected image preview" />
+          <div class="upload-preview-bar">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/>
+              <path d="m21 15-5-5L5 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span id="uploadLabel"></span>
+            <button id="removeFileBtn" class="remove-btn" title="Remove" aria-label="Remove file">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Error -->
+      <div id="errorBanner" class="error-banner" hidden>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+          <line x1="12" y1="8" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="12" cy="16" r="1" fill="currentColor"/>
+        </svg>
+        <span id="errorText"></span>
+      </div>
+
+      <!-- Product name -->
+      <input type="text" id="productName" class="text-input"
+             placeholder="Product name (optional) — helps Captio name it correctly" />
+
+      <!-- Tone selector -->
+      <div class="tone-selector">
+        <span class="tone-label">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 20h9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Tone
+        </span>
+        <div class="tone-pills" id="tonePills" role="group" aria-label="Select tone">
+          <button class="tone-pill active" data-tone="professional" aria-pressed="true">Professional</button>
+          <button class="tone-pill" data-tone="concise"      aria-pressed="false">Concise</button>
+          <button class="tone-pill" data-tone="marketing"    aria-pressed="false">Marketing</button>
+          <button class="tone-pill" data-tone="descriptive"  aria-pressed="false">Descriptive</button>
+        </div>
+      </div>
+
+      <!-- Generate -->
+      <button id="generateBtn" class="btn btn-primary btn-full">
+        <svg id="btnIcon" class="btn-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"
+                stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+        <span id="btnText">Generate Copy</span>
+        <svg id="btnSpinner" class="spinner" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" hidden>
+          <circle cx="12" cy="12" r="9" stroke="rgba(255,255,255,0.25)" stroke-width="3"/>
+          <path d="M12 3a9 9 0 019 9" stroke="white" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <p class="trust-line">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+        Free · No account needed · Takes about 10 seconds
+      </p>
+    </section>
+
+    <!-- ── Results ───────────────────────────────────────────────────────── -->
+    <section class="results-section" id="resultsSection">
+
+      <div id="emptyState" class="empty-state">
+        <div class="empty-icon-wrap">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"
+                  stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <p class="empty-title">Your copy will appear here</p>
+        <p class="empty-sub">Upload an image and click Generate — results appear in seconds</p>
+        <div class="empty-preview-pills">
+          <span>Title</span><span>Key Points</span><span>Description</span><span>Ad Script</span>
+        </div>
+      </div>
+
+      <div id="resultCards" hidden>
+
+        <!-- Results header: badges + actions -->
+        <div class="results-header">
+          <div id="badgesRow" class="badges-row">
+            <span id="typeBadge" class="badge" hidden></span>
+            <span id="langBadge" class="badge badge--lang" hidden></span>
+            <span id="toneBadge" class="badge badge--tone" hidden></span>
+          </div>
+          <div class="results-actions">
+            <button id="copyAllBtn" class="btn btn-sm btn-ghost">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              Copy All
+            </button>
+            <button id="exportTxtBtn" class="btn btn-sm btn-ghost">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="7 10 12 15 17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              TXT
+            </button>
+            <button id="exportJsonBtn" class="btn btn-sm btn-ghost">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="7 10 12 15 17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              JSON
+            </button>
+            <button id="regenerateBtn" class="btn btn-sm btn-ghost">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <polyline points="1 4 1 10 7 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.51 15a9 9 0 102.13-9.36L1 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Regenerate
+            </button>
+          </div>
+        </div>
+
+        <!-- Result cards -->
+        <div id="resultGrid" class="result-grid">
+
+          <div class="result-card">
+            <div class="result-card-top">
+              <span class="result-label">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 6h16M4 12h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+                Title
+              </span>
+              <button class="copy-btn" data-copy="title" aria-label="Copy title">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                Copy
+              </button>
+            </div>
+            <p id="outTitle" class="result-value result-value--title"></p>
+          </div>
+
+          <div class="result-card">
+            <div class="result-card-top">
+              <span class="result-label">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <line x1="8" y1="6"  x2="21" y2="6"  stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="8" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="8" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="3" cy="6"  r="1.5" fill="currentColor"/>
+                  <circle cx="3" cy="12" r="1.5" fill="currentColor"/>
+                  <circle cx="3" cy="18" r="1.5" fill="currentColor"/>
+                </svg>
+                Key Points
+              </span>
+              <button class="copy-btn" data-copy="bullets" aria-label="Copy key points">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                Copy
+              </button>
+            </div>
+            <ul id="outBullets" class="result-bullets"></ul>
+          </div>
+
+          <div class="result-card">
+            <div class="result-card-top">
+              <span class="result-label">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 6h16M4 10h16M4 14h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+                Description
+              </span>
+              <button class="copy-btn" data-copy="description" aria-label="Copy description">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                Copy
+              </button>
+            </div>
+            <p id="outDescription" class="result-value"></p>
+          </div>
+
+          <div class="result-card result-card--highlight">
+            <div class="result-card-top">
+              <span class="result-label">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
+                           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Ad Script
+              </span>
+              <button class="copy-btn" data-copy="ad" aria-label="Copy ad script">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                Copy
+              </button>
+            </div>
+            <p id="outAd" class="result-value result-value--ad"></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust bar -->
+    <div class="trust-bar">
+      <div class="trust-bar-inner">
+        <span class="trust-item">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+          Powered by GPT-4o Vision
+        </span>
+        <span class="trust-dot">·</span>
+        <span class="trust-item">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+            <line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          20+ languages
+        </span>
+        <span class="trust-dot">·</span>
+        <span class="trust-item">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Results in ~10 seconds
+        </span>
+        <span class="trust-dot">·</span>
+        <span class="trust-item">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="2"/>
+            <path d="M7 11V7a5 5 0 0110 0v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          Images never stored
+        </span>
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <section class="pricing-section">
+      <div class="pricing-header">
+        <h2>Simple, honest pricing</h2>
+        <p>Start free. Upgrade when you need more.</p>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="plan-card">
+          <p class="plan-name">Free</p>
+          <div class="plan-price-row">
+            <span class="plan-price">$0</span>
+            <span class="plan-period">/ month</span>
+          </div>
+          <p class="plan-tagline">Free to try, no card needed</p>
+          <ul class="plan-features">
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              3 generations per day
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              All image types supported
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              20+ languages
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              TXT &amp; JSON export
+            </li>
+            <li class="plan-feature--muted">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Upgrade for bulk export
+            </li>
+          </ul>
+          <button class="btn btn-outline btn-full" disabled>Current Plan</button>
+        </div>
+
+        <div class="plan-card plan-card--pro">
+          <span class="pro-badge">Most Popular</span>
+          <p class="plan-name">Pro</p>
+          <div class="plan-price-row">
+            <span class="plan-price">$9</span>
+            <span class="plan-period">/ month</span>
+          </div>
+          <p class="plan-tagline">For creators &amp; teams</p>
+          <ul class="plan-features">
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Unlimited generations
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              All image types supported
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              20+ languages
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Bulk export &amp; history
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Priority processing
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Early feature access
+            </li>
+          </ul>
+          <button class="btn btn-pro btn-full">Upgrade to Pro →</button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span>
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="opacity:.5">
+        <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/>
+      </svg>
+      Captio
+    </span>
+    <span class="footer-dot">·</span>
+    <span>Powered by GPT-4o Vision</span>
+    <span class="footer-dot">·</span>
+    <span>No signup required</span>
+    <span class="footer-dot">·</span>
+    <span>© 2026</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
